@@ -1,0 +1,15 @@
+/* 自訂 accent 色 — 三段身份對應 */
+:root {
+  --accent-game: #d97706;     /* 暖橘 — 遊戲企劃 */
+  --accent-test: #2563eb;     /* 藍 — 測試工程師 */
+  --accent-front: #059669;    /* 綠 — 前端工程師 */
+  --accent-now: #1e293b;      /* 深灰 — 現在的我 */
+}
+
+/* 通用：項目分隔線 */
+hr.section-divider {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 1rem 0;
+  width: 60%;
+}
