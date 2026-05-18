@@ -1,0 +1,21 @@
+{
+  "name": "self-introduce",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "dev:pacston": "slidev slides.pacston.md --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "export:pacston": "slidev export slides.pacston.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-apple-basic": "latest",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.49.0",
+    "playwright-chromium": "^1.40.0"
+  }
+}
