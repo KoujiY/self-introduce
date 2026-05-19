@@ -476,3 +476,80 @@ TODO: QR code for portfolio
 Slide 23 — Thank You + 聯絡資訊
 時長：~30s
 -->
+
+---
+hideInToc: true
+---
+
+# 附錄 / 詳細經歷時間軸
+
+<JourneyTimeline
+  :nodes="[
+    { year: '2007–2012', title: '成大資源工程學系' },
+    { year: '2012–2014', title: '當兵 + 重考研究所' },
+    { year: '2014.8–10', title: '卡坦科技 / 遊戲企劃' },
+    { year: '2015.2–2016.5', title: '遊戲怪獸 / 遊戲企劃' },
+    { year: '2016.7–2021.2', title: '捷思達數位 / 測試工程師' },
+    { year: '2021.2–10', title: '資策會前端課程' },
+    { year: '2021.10–2023.10', title: '聯合報 / 前端工程師' },
+    { year: '2024.1–2026.2', title: 'ViewSonic / Frontend Developer' }
+  ]"
+/>
+
+<!--
+Slide A1 — 詳細工作經歷時間軸（Q&A 備用）
+-->
+
+---
+hideInToc: true
+---
+
+# 附錄 / 技術深度範例
+
+## LARP Nexus — 自動揭露引擎
+
+---
+
+**問題：**
+GM 在劇本進行中,需要根據條件
+自動向特定角色揭露線索。
+
+**我的設計：**
+<div class="mt-4 text-sm text-gray-500">
+TODO: Mermaid 流程圖 / 狀態機示意
+</div>
+
+---
+
+**關鍵技術：**
+Server Actions · WebSocket 廣播
+狀態同步策略
+
+<!--
+Slide A2 — 技術深度範例（Q&A 備用）
+-->
+
+---
+hideInToc: true
+layout: image-right
+image: ./assets/photos/appendix-hobby.jpg
+---
+
+# 附錄 / 個人興趣
+
+## LARP (Live Action Role-Playing)
+
+---
+
+這個興趣訓練我：
+- **系統思維**　　　(規則設計)
+- **使用者同理心**　(玩家體驗)
+- **即興反應能力**　(現場狀況)
+
+---
+
+→ 這也是 LARP Nexus 的起點。
+
+<!--
+Slide A3 — 個人興趣（Q&A 備用）
+-->
