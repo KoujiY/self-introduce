@@ -16,5 +16,5 @@
   <text x="400" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#4c1d95" text-anchor="middle">聊天式互動作答 MVP</text>
 
   <!-- NDA note -->
-  <text x="400" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" letter-spacing="1">— 因 NDA 考量,實際介面以 mockup 呈現 —</text>
+  <text x="400" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" letter-spacing="1">— 因 NDA 考量，實際介面以 mockup 呈現 —</text>
 </svg>
