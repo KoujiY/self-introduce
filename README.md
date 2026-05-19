@@ -1,6 +1,6 @@
 # 自我介紹簡報
 
-邱庭瑋 (Cody Chiu) 的面試自介簡報,使用 Slidev + apple-basic 主題,14 分鐘長度 (23 主簡報 + 3 附錄)。
+邱庭瑋 (Wayne Chiu) 的面試自介簡報,使用 Slidev + apple-basic 主題,14 分鐘長度 (23 主簡報 + 3 附錄)。
 
 ## 開發
 

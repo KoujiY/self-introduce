@@ -3,19 +3,29 @@ theme: apple-basic
 title: 邱庭瑋 - 自我介紹
 download: true
 lineNumbers: false
+layout: none
+class: 'h-full flex flex-col justify-between p-16'
 ---
 
-# Self Introduction
+<div class="text-sm opacity-50 tracking-widest">2026.05</div>
 
-## 自我介紹
+<div>
 
-2026.05
+<div class="text-7xl font-light leading-tight">Self Introduction</div>
+
+<div class="mt-4 w-12 border-t border-gray-400"></div>
+
+<div class="mt-6 text-lg opacity-70">邱庭瑋  ·  Wayne Chiu</div>
+
+</div>
+
+<div></div>
 
 <!--
-Slide 01 — 標題卡
+Slide 01 — 標題卡（🅱️ 不對稱角落定錨）
 時長：~10s
-（保留現狀，等其他 slide 完成後再調整為 B 方案）
 -->
+
 
 ---
 layout: intro-image
@@ -24,7 +34,7 @@ image: /photos/cover-hero.jpg
 
 <div class="absolute bottom-12 left-12 text-white">
 
-# 邱庭瑋  Cody Chiu
+# 邱庭瑋  Wayne Chiu
 
 Frontend Engineer
 
@@ -538,7 +548,7 @@ image: /photos/closing-thanks.jpg
 ## 謝謝聆聽
 
 <div class="mt-8 text-lg">
-邱庭瑋  Cody Chiu
+邱庭瑋  Wayne Chiu
 </div>
 
 <div class="mt-2 text-sm opacity-80">

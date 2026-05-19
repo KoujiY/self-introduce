@@ -765,7 +765,7 @@ background: ./assets/photos/cover-hero.jpg
 class: text-white
 ---
 
-# 邱庭瑋  Cody Chiu
+# 邱庭瑋  Wayne Chiu
 
 Frontend Engineer
 
@@ -1349,7 +1349,7 @@ class: text-white text-center
 
 ---
 
-邱庭瑋  Cody Chiu
+邱庭瑋  Wayne Chiu
 
 📧  TODO: email
 💼  TODO: linkedin URL
@@ -1630,7 +1630,7 @@ Run: `pnpm dev`
 ```markdown
 # 自我介紹簡報
 
-邱庭瑋 (Cody Chiu) 的面試自介簡報，使用 Slidev + apple-basic 主題。
+邱庭瑋 (Wayne Chiu) 的面試自介簡報，使用 Slidev + apple-basic 主題。
 
 ## 開發
 

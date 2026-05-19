@@ -1,6 +1,6 @@
 # 自我介紹簡報 Design Spec
 
-**作者**：邱庭瑋 (Cody Chiu)
+**作者**：邱庭瑋 (Wayne Chiu)
 **日期**：2026-05-19
 **目標應徵**：前端工程師職位（首要目標：Pacston HCI Frontend Engineer）
 **簡報長度**：14 分鐘（主簡報 23 張 + 附錄 3 張，Slide 22 有兩個版本可切換）
@@ -88,7 +88,7 @@ Self Introduction
 ```
 [cover-hero.jpg — 旅行照]
 
-邱庭瑋  Cody Chiu
+邱庭瑋  Wayne Chiu
 Frontend Engineer
 
 [slogan — 待自填]
@@ -546,7 +546,7 @@ Thank you
 謝謝聆聽
 
 ──
-邱庭瑋  Cody Chiu
+邱庭瑋  Wayne Chiu
 
 📧  [email]
 💼  linkedin.com/in/...
