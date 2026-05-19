@@ -113,8 +113,8 @@ Slide 05 — 身份 2：測試工程師
   role="Frontend Engineer"
   period="2021 – 現在"
   company="聯合報 + ViewSonic"
-  lesson="把想法落地的能力"
-  bridge="最近的個人專案 LARP Nexus,從規則設計、品質把關到上線部署,三個身份終於合流到一個產品上。"
+  lesson="掌握新知、將想法落地"
+  bridge="從小專案到 AI 驅動開發，累積的 know-how 讓我把想做的產品逐步實現。"
   accent="var(--accent-front)"
 />
 
