@@ -124,23 +124,6 @@ Slide 06 — 身份 3：前端工程師
 -->
 
 ---
-
-<JourneyTimeline
-  :nodes="[
-    { year: '2014', title: '遊戲企劃', subtitle: '玩家視角', accent: 'var(--accent-game)' },
-    { year: '2016', title: '測試工程師', subtitle: '品質意識', accent: 'var(--accent-test)' },
-    { year: '2021', title: '前端工程師', subtitle: '落地能力', accent: 'var(--accent-front)' },
-    { year: '2026', title: '邱庭瑋', accent: 'var(--accent-now)', isCurrent: true }
-  ]"
-  conclusion="會做產品的前端工程師"
-/>
-
-<!--
-Slide 07 — 三身份合流
-時長：~30s
--->
-
----
 layout: intro-image
 image: /photos/divider-craft.jpg
 ---
@@ -158,7 +141,7 @@ image: /photos/divider-craft.jpg
 </div>
 
 <!--
-Slide 08 — Part 3 章節標題
+Slide 07 — Part 3 章節標題
 時長：~15s
 -->
 
@@ -187,7 +170,7 @@ TODO: Quiz Generator + ClassSwift 縮圖待補
 </div>
 
 <!--
-Slide 09 — ViewSonic 概覽
+Slide 08 — ViewSonic 概覽
 時長：~45s
 -->
 
@@ -207,7 +190,7 @@ Slide 09 — ViewSonic 概覽
 />
 
 <!--
-Slide 10 — ViewSonic 軸線 1：AI 創新小組 ⭐
+Slide 09 — ViewSonic 軸線 1：AI 創新小組 ⭐
 時長：~50s
 TODO：可選擇加入 LLM 整合架構圖
 -->
@@ -237,7 +220,7 @@ Electron · TypeScript · Redux · Zod · Axios · husky · Vitest · E2E
 </div>
 
 <!--
-Slide 11 — ViewSonic 軸線 2：ClassSwift
+Slide 10 — ViewSonic 軸線 2：ClassSwift
 時長：~40s
 -->
 
@@ -265,7 +248,7 @@ layout: center
 </div>
 
 <!--
-Slide 12 — ViewSonic 軸線 3：OpenSpec
+Slide 11 — ViewSonic 軸線 3：OpenSpec
 時長：~40s
 -->
 
@@ -294,7 +277,7 @@ TODO: GM 桌面端 + 玩家手機端雙截圖待補
 </div>
 
 <!--
-Slide 13 — LARP Nexus 概覽
+Slide 12 — LARP Nexus 概覽
 時長：~45s
 -->
 
@@ -322,7 +305,7 @@ Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · P
 </div>
 
 <!--
-Slide 14 — LARP Nexus 技術核心
+Slide 13 — LARP Nexus 技術核心
 時長：~55s
 -->
 
@@ -349,7 +332,7 @@ layout: center
 </div>
 
 <!--
-Slide 15 — LARP Nexus AI 開發實踐
+Slide 14 — LARP Nexus AI 開發實踐
 時長：~50s
 -->
 
@@ -377,7 +360,7 @@ layout: center
 </div>
 
 <!--
-Slide 16 — 聯合報軸線 1：跨專案共用元件庫
+Slide 15 — 聯合報軸線 1：跨專案共用元件庫
 時長：~30s
 -->
 
@@ -403,7 +386,7 @@ layout: center
 </div>
 
 <!--
-Slide 17 — 聯合報軸線 2：新聞專題 + GTM
+Slide 16 — 聯合報軸線 2：新聞專題 + GTM
 時長：~30s
 -->
 
@@ -432,7 +415,7 @@ layout: center
 />
 
 <!--
-Slide 18 — 技能矩陣
+Slide 17 — 技能矩陣
 時長：~30s
 -->
 
@@ -461,7 +444,7 @@ layout: center
 </div>
 
 <!--
-Slide 19 — AI 工具熟練度
+Slide 18 — AI 工具熟練度
 時長：~30s
 -->
 
@@ -483,7 +466,7 @@ image: /photos/divider-horizon.jpg
 </div>
 
 <!--
-Slide 20 — Part 5 章節標題
+Slide 19 — Part 5 章節標題
 時長：~10s
 -->
 
@@ -507,7 +490,7 @@ ViewSonic Mac team 因公司戰略調整收掉。
 </div>
 
 <!--
-Slide 21 — 離職背景
+Slide 20 — 離職背景
 時長：~25s
 -->
 
@@ -531,7 +514,7 @@ layout: center
 </div>
 
 <!--
-Slide 22A — 想做的事（通用版）
+Slide 21A — 想做的事（通用版）
 時長：~50s
 注意：Pacston 客製版在 slides.pacston.md
 -->
@@ -564,7 +547,7 @@ TODO: QR code for portfolio
 </div>
 
 <!--
-Slide 23 — Thank You + 聯絡資訊
+Slide 22 — Thank You + 聯絡資訊
 時長：~30s
 -->
 
