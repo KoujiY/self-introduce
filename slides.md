@@ -530,20 +530,46 @@ hideInToc: true
 layout: center
 ---
 
+<div class="max-w-3xl mx-auto">
+
 # 附錄 / 詳細經歷時間軸
 
-<JourneyTimeline
-  :nodes="[
-    { year: '2007–2012', title: '成大資源工程學系' },
-    { year: '2012–2014', title: '當兵 + 重考研究所' },
-    { year: '2014.8–10', title: '卡坦科技 / 遊戲企劃' },
-    { year: '2015.2–2016.5', title: '遊戲怪獸 / 遊戲企劃' },
-    { year: '2016.7–2021.2', title: '捷思達數位 / 測試工程師' },
-    { year: '2021.2–10', title: '資策會前端課程' },
-    { year: '2021.10–2023.10', title: '聯合報 / 前端工程師' },
-    { year: '2024.1–2026.2', title: 'ViewSonic / Frontend Developer' }
-  ]"
-/>
+<div class="mt-6 space-y-1.5">
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2007 – 2012</div>
+    <div>國立成功大學 / 資源工程學系</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2012 – 2014</div>
+    <div>當兵 + 重考研究所</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2014.8 – 10</div>
+    <div>卡坦科技 / 遊戲企劃</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2015.2 – 2016.5</div>
+    <div>遊戲怪獸 / 遊戲企劃</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2016.7 – 2021.2</div>
+    <div>捷思達數位 / 測試工程師</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2021.2 – 7</div>
+    <div>資策會前端課程</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2021.10 – 2023.10</div>
+    <div>聯合報 / 前端工程師</div>
+  </div>
+  <div class="grid grid-cols-[180px_1fr] gap-6 items-baseline">
+    <div class="font-mono text-sm text-gray-500">2024.1 – 2026.2</div>
+    <div>ViewSonic / Frontend Developer</div>
+  </div>
+</div>
+
+</div>
 
 <!--
 Slide A1 — 詳細工作經歷時間軸（Q&A 備用）
