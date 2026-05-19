@@ -156,14 +156,17 @@ layout: center
 ## Frontend Developer · 2024.01 – 2026.02 · 2 年 2 個月
 
 <div class="flex gap-12 my-6 justify-center items-end">
-  <a href="/images/classswift.webp" target="_blank" class="text-center hover:opacity-80 transition-opacity">
-    <img src="/images/classswift.webp" class="h-28 mx-auto rounded shadow-md cursor-zoom-in" alt="ClassSwift" />
-    <div class="text-xs text-gray-500 mt-2">ClassSwift · 點圖看原圖</div>
-  </a>
-  <a href="/images/mvp-chat.png" target="_blank" class="text-center hover:opacity-80 transition-opacity">
-    <img src="/images/mvp-chat.png" class="h-28 mx-auto rounded shadow-md cursor-zoom-in" alt="聊天式互動作答 MVP" />
-    <div class="text-xs text-gray-500 mt-2">聊天式互動作答 (MVP) · 點圖看原圖</div>
-  </a>
+  <ProductThumb
+    src="/images/classswift.webp"
+    alt="ClassSwift"
+    caption="ClassSwift · 點圖看原圖"
+  />
+  <ProductThumb
+    src="/images/mvp-chat.png"
+    fallback="/images/mvp-chat-mock.svg"
+    alt="聊天式互動作答 MVP"
+    caption="聊天式互動作答 (MVP) · 點圖看原圖"
+  />
 </div>
 
 ### 三個工作軸線：
@@ -189,6 +192,7 @@ layout: center
   company="ViewSonic"
   axisLabel="軸線 1 / AI 創新小組"
   image="/images/mvp-chat.png"
+  imageFallback="/images/mvp-chat-mock.svg"
   imageCaption="聊天式互動作答 MVP"
   heading="Key Feature："
   :bullets="[

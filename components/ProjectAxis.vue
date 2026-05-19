@@ -9,7 +9,22 @@ defineProps<{
   footerBullets?: string[]
   image?: string
   imageCaption?: string
+  imageFallback?: string
 }>()
+
+// Image fallback handler. Reads the fallback URL from data-fallback so a
+// closure isn't needed; uses data-fallback-applied to avoid loops if the
+// fallback itself 404s.
+function handleImageError(event: Event) {
+  const img = event.target as HTMLImageElement
+  if (img.dataset.fallbackApplied) return
+  const fb = img.dataset.fallback
+  if (!fb) return
+  img.dataset.fallbackApplied = 'true'
+  img.src = fb
+  const link = img.closest('a')
+  if (link) link.href = fb
+}
 </script>
 
 <template>
@@ -23,7 +38,12 @@ defineProps<{
     <div class="body">
       <div v-if="image" class="image-block">
         <a :href="image" target="_blank" class="image-link">
-          <img :src="image" :alt="imageCaption || axisLabel" />
+          <img
+            :src="image"
+            :alt="imageCaption || axisLabel"
+            :data-fallback="imageFallback"
+            @error="handleImageError"
+          />
         </a>
         <div v-if="imageCaption" class="image-caption">{{ imageCaption }} · 點圖看原圖</div>
       </div>

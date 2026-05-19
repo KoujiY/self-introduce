@@ -5,3 +5,6 @@ dist/
 .DS_Store
 Thumbs.db
 *-export.pdf
+
+# ViewSonic MVP — internal Figma mock, local-only; public uses SVG placeholder
+/public/images/mvp-chat.png

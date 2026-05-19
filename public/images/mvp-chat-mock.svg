@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <rect width="800" height="500" fill="#faf5ff"/>
+
+  <!-- Chat window -->
+  <rect x="80" y="80" width="640" height="340" fill="white" rx="12" stroke="#e9d5ff" stroke-width="2"/>
+
+  <!-- Chat bubble (AI on left — incoming) -->
+  <rect x="120" y="140" width="260" height="48" fill="#7c3aed" rx="20"/>
+  <text x="250" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="white" text-anchor="middle">AI 即時回應⋯</text>
+
+  <!-- Chat bubble (student on right — outgoing) -->
+  <rect x="420" y="220" width="260" height="48" fill="#f3e8ff" rx="20"/>
+  <text x="550" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b21a8" text-anchor="middle">學生提問⋯</text>
+
+  <!-- Title -->
+  <text x="400" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#4c1d95" text-anchor="middle">聊天式互動作答 MVP</text>
+
+  <!-- NDA note -->
+  <text x="400" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" letter-spacing="1">— 因 NDA 考量,實際介面以 mockup 呈現 —</text>
+</svg>
