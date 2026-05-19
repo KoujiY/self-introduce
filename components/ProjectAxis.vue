@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps<{
+import { onMounted, ref } from 'vue'
+
+const props = defineProps<{
   company: string
   axisLabel: string
   heading?: string
@@ -8,23 +10,32 @@ defineProps<{
   footerText?: string
   footerBullets?: string[]
   image?: string
-  imageCaption?: string
   imageFallback?: string
+  imageCaption?: string
 }>()
 
-// Image fallback handler. Reads the fallback URL from data-fallback so a
-// closure isn't needed; uses data-fallback-applied to avoid loops if the
-// fallback itself 404s.
-function handleImageError(event: Event) {
-  const img = event.target as HTMLImageElement
-  if (img.dataset.fallbackApplied) return
-  const fb = img.dataset.fallback
-  if (!fb) return
-  img.dataset.fallbackApplied = 'true'
-  img.src = fb
+const imgRef = ref<HTMLImageElement>()
+
+function applyFallback() {
+  const img = imgRef.value
+  if (!img || !props.imageFallback) return
+  if (img.src.endsWith(props.imageFallback)) return
+  img.src = props.imageFallback
   const link = img.closest('a')
-  if (link) link.href = fb
+  if (link) link.href = props.imageFallback
 }
+
+onMounted(() => {
+  const img = imgRef.value
+  if (!img || !props.imageFallback) return
+
+  if (img.complete && img.naturalWidth === 0) {
+    applyFallback()
+    return
+  }
+
+  img.onerror = applyFallback
+})
 </script>
 
 <template>
@@ -36,17 +47,20 @@ function handleImageError(event: Event) {
     <hr class="section-divider" />
 
     <div class="body">
-      <div v-if="image" class="image-block">
-        <a :href="image" target="_blank" class="image-link">
-          <img
-            :src="image"
-            :alt="imageCaption || axisLabel"
-            :data-fallback="imageFallback"
-            @error="handleImageError"
-          />
-        </a>
+      <a
+        v-if="image"
+        :href="image"
+        target="_blank"
+        class="image-block image-link"
+      >
+        <img
+          ref="imgRef"
+          :src="image"
+          :alt="imageCaption || axisLabel"
+          @error="applyFallback"
+        />
         <div v-if="imageCaption" class="image-caption">{{ imageCaption }} · 點圖看原圖</div>
-      </div>
+      </a>
 
       <div class="content">
         <div v-if="heading" class="heading">{{ heading }}</div>
@@ -110,25 +124,24 @@ function handleImageError(event: Event) {
   flex: 1;
 }
 
-/* Image block */
+/* Image block (also the <a> tag — wraps img + caption) */
 .image-block {
   text-align: center;
   flex-shrink: 0;
+  display: inline-block;
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-block:hover {
+  opacity: 0.85;
 }
 
 .project-axis.with-image .image-block {
   flex: 0 0 auto;
   max-width: 420px;
-}
-
-.image-link {
-  display: inline-block;
-  cursor: zoom-in;
-  transition: opacity 0.2s;
-}
-
-.image-link:hover {
-  opacity: 0.85;
 }
 
 .image-block img {
