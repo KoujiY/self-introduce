@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
 const props = defineProps<{
   company: string
@@ -14,20 +14,37 @@ const props = defineProps<{
   imageCaption?: string
 }>()
 
+// Slidev's markdown <img src="..."> gets rewritten with the build --base
+// prefix automatically, but component-prop strings don't. Resolve them
+// ourselves so /images/foo.png becomes /self-introduce/images/foo.png on
+// GitHub Pages (and stays /images/foo.png in dev).
+function withBase(path: string): string {
+  if (/^https?:\/\//i.test(path)) return path
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+}
+
+const resolvedImage = computed(() =>
+  props.image ? withBase(props.image) : undefined,
+)
+const resolvedFallback = computed(() =>
+  props.imageFallback ? withBase(props.imageFallback) : undefined,
+)
+
 const imgRef = ref<HTMLImageElement>()
 
 function applyFallback() {
   const img = imgRef.value
-  if (!img || !props.imageFallback) return
-  if (img.src.endsWith(props.imageFallback)) return
-  img.src = props.imageFallback
+  const fb = resolvedFallback.value
+  if (!img || !fb) return
+  if (img.src.endsWith(fb)) return
+  img.src = fb
   const link = img.closest('a')
-  if (link) link.href = props.imageFallback
+  if (link) link.href = fb
 }
 
 onMounted(() => {
   const img = imgRef.value
-  if (!img || !props.imageFallback) return
+  if (!img || !resolvedFallback.value) return
 
   if (img.complete && img.naturalWidth === 0) {
     applyFallback()
@@ -39,7 +56,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="project-axis" :class="{ 'with-image': image }">
+  <div class="project-axis" :class="{ 'with-image': resolvedImage }">
     <div class="header">
       <span class="company">{{ company }}</span>
       <span class="axis-label">{{ axisLabel }}</span>
@@ -48,14 +65,14 @@ onMounted(() => {
 
     <div class="body">
       <a
-        v-if="image"
-        :href="image"
+        v-if="resolvedImage"
+        :href="resolvedImage"
         target="_blank"
         class="image-block image-link"
       >
         <img
           ref="imgRef"
-          :src="image"
+          :src="resolvedImage"
           :alt="imageCaption || axisLabel"
           @error="applyFallback"
         />
