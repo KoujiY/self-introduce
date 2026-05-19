@@ -155,16 +155,23 @@ layout: center
 
 ## Frontend Developer · 2024.01 – 2026.02 · 2 年 2 個月
 
-<div class="mt-4 text-sm text-gray-500">
-TODO: Quiz Generator + ClassSwift 縮圖待補
+<div class="flex gap-12 my-6 justify-center items-end">
+  <a href="/images/classswift.webp" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/classswift.webp" class="h-28 mx-auto rounded shadow-md cursor-zoom-in" alt="ClassSwift" />
+    <div class="text-xs text-gray-500 mt-2">ClassSwift · 點圖看原圖</div>
+  </a>
+  <a href="/images/mvp-chat.png" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/mvp-chat.png" class="h-28 mx-auto rounded shadow-md cursor-zoom-in" alt="聊天式互動作答 MVP" />
+    <div class="text-xs text-gray-500 mt-2">聊天式互動作答 (MVP) · 點圖看原圖</div>
+  </a>
 </div>
 
 ### 三個工作軸線：
 
-- **上線產品開發與維護**
-  Quiz Generator · ClassSwift (Mac)
 - **AI 創新小組：PoC / MVP**
   聊天式互動作答 · 學習歷程追蹤
+- **上線產品開發與維護**
+  Quiz Generator & ClassSwift (Mac)
 - **OpenSpec 流程導入**
 
 </div>
@@ -175,49 +182,46 @@ Slide 08 — ViewSonic 概覽
 -->
 
 ---
+layout: center
+---
 
 <ProjectAxis
   company="ViewSonic"
   axisLabel="軸線 1 / AI 創新小組"
-  heading="我做的："
+  image="/images/mvp-chat.png"
+  imageCaption="聊天式互動作答 MVP"
+  heading="Key Feature："
   :bullets="[
-    '聊天式互動作答系統 (PoC → MVP)',
-    '學習歷程追蹤 · 學生狀態安全警示',
+    '聊天式互動作答系統',
+    '學習歷程追蹤 & 學生狀態安全警示',
     '作答回饋報告整合'
   ]"
-  footerLabel="關鍵能力："
-  footerText="把 LLM / NLP 推論結果做成即時、可用的互動介面。"
+  footerLabel="產品目標："
+  footerText="把 LLM 推論結果做成即時、可用的互動介面，提供學生一個安全的 AI 對話環境。"
 />
 
 <!--
 Slide 09 — ViewSonic 軸線 1：AI 創新小組 ⭐
 時長：~50s
-TODO：可選擇加入 LLM 整合架構圖
 -->
 
 ---
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# ViewSonic 軸線 2 / ClassSwift
-
-<div class="mt-4 text-sm text-gray-500">
-TODO: ClassSwift Mac 端 UI 截圖待補
-</div>
-
-ViewSonic 主力教育產品 · 課堂即時互動
-
-我負責：Electron Mac 端開發與迭代
-
-<hr class="my-6" />
-
-**Stack:**
-
-Electron · TypeScript · Redux · Zod · Axios · husky · Vitest · E2E
-
-</div>
+<ProjectAxis
+  company="ViewSonic"
+  axisLabel="軸線 2 / ClassSwift"
+  image="/images/classswift.webp"
+  imageCaption="ClassSwift"
+  heading="關於 ClassSwift："
+  :bullets="[
+    'ViewSonic 主力教育產品 · 課堂即時互動',
+    '主要負責：Electron Mac 端的開發與迭代'
+  ]"
+  footerLabel="Stack:"
+  footerText="Electron · TypeScript · Redux · Zod · Axios · husky · Vitest"
+/>
 
 <!--
 Slide 10 — ViewSonic 軸線 2：ClassSwift
@@ -228,24 +232,16 @@ Slide 10 — ViewSonic 軸線 2：ClassSwift
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# ViewSonic 軸線 3 / OpenSpec
-
-**問題：**
-既有專案要怎麼跟 AI 開發工具整合？
-
-<hr class="my-6" />
-
-**我的做法：**
-主動導入 OpenSpec
-── 為 AI 而生的 Spec-Driven Development
-
-<hr class="my-6" />
-
-**結果：** 團隊建立能應用於 AI 的開發方式,降低技術債、提升程式碼一致性。
-
-</div>
+<ProjectAxis
+  company="ViewSonic"
+  axisLabel="軸線 3 / OpenSpec"
+  heading="問題 → 做法 → 結果："
+  :bullets="[
+    '問題：既有專案要怎麼跟 AI 開發工具整合？',
+    '做法：導入 OpenSpec — 為 AI 而生的 Spec-Driven Development',
+    '結果：團隊建立能應用於 AI 的開發方式，降低技術債、提升程式碼一致性'
+  ]"
+/>
 
 <!--
 Slide 11 — ViewSonic 軸線 3：OpenSpec

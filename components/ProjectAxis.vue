@@ -6,27 +6,40 @@ defineProps<{
   bullets: string[]
   footerLabel?: string
   footerText?: string
+  image?: string
+  imageCaption?: string
 }>()
 </script>
 
 <template>
-  <div class="project-axis">
+  <div class="project-axis" :class="{ 'with-image': image }">
     <div class="header">
       <span class="company">{{ company }}</span>
       <span class="axis-label">{{ axisLabel }}</span>
     </div>
     <hr class="section-divider" />
 
-    <div v-if="heading" class="heading">{{ heading }}</div>
-    <ul class="bullets">
-      <li v-for="(b, idx) in bullets" :key="idx">{{ b }}</li>
-    </ul>
+    <div class="body">
+      <div v-if="image" class="image-block">
+        <a :href="image" target="_blank" class="image-link">
+          <img :src="image" :alt="imageCaption || axisLabel" />
+        </a>
+        <div v-if="imageCaption" class="image-caption">{{ imageCaption }} · 點圖看原圖</div>
+      </div>
 
-    <template v-if="footerLabel || footerText">
-      <hr class="section-divider" />
-      <div v-if="footerLabel" class="footer-label">{{ footerLabel }}</div>
-      <div v-if="footerText" class="footer-text">{{ footerText }}</div>
-    </template>
+      <div class="content">
+        <div v-if="heading" class="heading">{{ heading }}</div>
+        <ul class="bullets">
+          <li v-for="(b, idx) in bullets" :key="idx">{{ b }}</li>
+        </ul>
+
+        <template v-if="footerLabel || footerText">
+          <hr class="section-divider" />
+          <div v-if="footerLabel" class="footer-label">{{ footerLabel }}</div>
+          <div v-if="footerText" class="footer-text">{{ footerText }}</div>
+        </template>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,7 +50,7 @@ defineProps<{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -57,10 +70,62 @@ defineProps<{
   color: #64748b;
 }
 
+/* Body layout */
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-axis.with-image .body {
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Image block */
+.image-block {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.project-axis.with-image .image-block {
+  flex: 0 0 auto;
+  max-width: 420px;
+}
+
+.image-link {
+  display: inline-block;
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.image-link:hover {
+  opacity: 0.85;
+}
+
+.image-block img {
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.image-caption {
+  font-size: 0.75em;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+/* Content text styles */
 .heading {
   font-size: 0.95em;
   color: #475569;
-  margin: 1rem 0 0.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .bullets {
