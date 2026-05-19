@@ -32,6 +32,8 @@ layout: intro-image
 image: /photos/cover-hero.jpg
 ---
 
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
 <div class="absolute bottom-12 left-12 text-white">
 
 # 邱庭瑋  Wayne Chiu
@@ -55,7 +57,7 @@ layout: intro-image
 image: /photos/divider-roots.jpg
 ---
 
-<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute inset-0 bg-black/50"></div>
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
@@ -143,7 +145,7 @@ layout: intro-image
 image: /photos/divider-craft.jpg
 ---
 
-<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute inset-0 bg-black/50"></div>
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
@@ -468,7 +470,7 @@ layout: intro-image
 image: /photos/divider-horizon.jpg
 ---
 
-<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute inset-0 bg-black/50"></div>
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
@@ -541,7 +543,7 @@ layout: intro-image
 image: /photos/closing-thanks.jpg
 ---
 
-<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute inset-0 bg-black/50"></div>
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
