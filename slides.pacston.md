@@ -431,23 +431,25 @@ Slide 21 — 離職背景
 
 ---
 
-# 我想找的下一站
+# 為什麼是 Pacston
 
 ---
 
-- 跟得上 AI 浪潮、願意一起進化的團隊
-- 能讓我繼續深化「AI + 前端整合」的環境
-- 願意接觸更廣的軟體 stack,不限於前端
+- **AI + LegalTech**
+  用 AI 賦能專業領域 ─
+  正好是我做教育產品兩年來的延續。
+- **HCI Frontend 職位**
+  LLM 推論 → 即時互動介面,
+  是我在 ViewSonic 兩年的主軸。
 
 ---
 
-→ 我能帶來的：
-&nbsp;&nbsp;&nbsp;做產品的視角 · 品質意識 · AI 開發實踐
+**我能帶來：**
+AI 整合經驗 · 元件庫設計 · OpenSpec 流程
 
 <!--
-Slide 22A — 想做的事（通用版）
+Slide 22B — 想做的事（Pacston 客製化版）
 時長：~50s
-注意：Pacston 客製版在 slides.pacston.md
 -->
 
 ---
