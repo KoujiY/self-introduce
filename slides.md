@@ -97,7 +97,7 @@ Slide 04 — 身份 1：遊戲企劃
   period="2016 – 2021"
   company="捷思達數位 · 4 年 7 個月"
   lesson="品質意識 與 系統性思考"
-  bridge="後來在 ClassSwift Mac 專案,我主動導入 OpenSpec / SDD,從制度面降低技術債的累積。"
+  bridge="測試是我進入軟體業的敲門磚，也磨出了我對品質與系統性問題的直覺。"
   accent="var(--accent-test)"
 />
 
