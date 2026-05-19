@@ -14,20 +14,24 @@ lineNumbers: false
 <!--
 Slide 01 — 標題卡
 時長：~10s
+（保留現狀，等其他 slide 完成後再調整為 B 方案）
 -->
 
 ---
-layout: cover
-background: ./assets/photos/cover-hero.jpg
-class: text-white
+layout: intro-image
+image: /photos/cover-hero.jpg
 ---
+
+<div class="absolute bottom-12 left-12 text-white">
 
 # 邱庭瑋  Cody Chiu
 
 Frontend Engineer
 
-<div class="mt-8 text-xl opacity-90">
+<div class="mt-4 text-xl opacity-90">
 TODO: slogan 待自填
+</div>
+
 </div>
 
 <!--
@@ -37,14 +41,19 @@ Slide 02 — 自我介紹
 -->
 
 ---
-layout: cover
-background: ./assets/photos/divider-roots.jpg
-class: text-white text-center
+layout: intro-image
+image: /photos/divider-roots.jpg
 ---
+
+<div class="absolute inset-0 bg-black/30"></div>
+
+<div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
 # 我這 10 年都在做產品
 
 ## 只是換了三個身份
+
+</div>
 
 <!--
 Slide 03 — Part 2 章節標題
@@ -82,7 +91,7 @@ Slide 04 — 身份 1：遊戲企劃
 
 <!--
 Slide 05 — 身份 2：測試工程師
-時長：~75s（多 15 秒,這段是最重要的轉折期）
+時長：~75s
 -->
 
 ---
@@ -120,16 +129,21 @@ Slide 07 — 三身份合流
 -->
 
 ---
-layout: cover
-background: ./assets/photos/divider-craft.jpg
-class: text-white text-center
+layout: intro-image
+image: /photos/divider-craft.jpg
 ---
+
+<div class="absolute inset-0 bg-black/30"></div>
+
+<div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
 # 代表作
 
 ## Featured Works
 
-── 三個身份合流的證據
+<div class="mt-4 opacity-80">── 三個身份合流的證據</div>
+
+</div>
 
 <!--
 Slide 08 — Part 3 章節標題
@@ -137,6 +151,10 @@ Slide 08 — Part 3 章節標題
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # ViewSonic 優派國際
 
@@ -153,6 +171,8 @@ TODO: Quiz Generator + ClassSwift 縮圖待補
 - **AI 創新小組：PoC / MVP**
   聊天式互動作答 · 學習歷程追蹤
 - **OpenSpec 流程導入**
+
+</div>
 
 <!--
 Slide 09 — ViewSonic 概覽
@@ -181,6 +201,10 @@ TODO：可選擇加入 LLM 整合架構圖
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # ViewSonic 軸線 2 / ClassSwift
 
@@ -198,12 +222,18 @@ ViewSonic 主力教育產品 · 課堂即時互動
 
 Electron · TypeScript · Redux · Zod · Axios · husky · Vitest · E2E
 
+</div>
+
 <!--
 Slide 11 — ViewSonic 軸線 2：ClassSwift
 時長：~40s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # ViewSonic 軸線 3 / OpenSpec
 
@@ -220,12 +250,18 @@ Slide 11 — ViewSonic 軸線 2：ClassSwift
 
 **結果：** 團隊建立能應用於 AI 的開發方式,降低技術債、提升程式碼一致性。
 
+</div>
+
 <!--
 Slide 12 — ViewSonic 軸線 3：OpenSpec
 時長：~40s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # LARP Nexus · 個人專案
 
@@ -243,12 +279,18 @@ TODO: GM 桌面端 + 玩家手機端雙截圖待補
 - 全程 AI 工具開發
   Claude Code (程式) + Stitch (UI)
 
+</div>
+
 <!--
 Slide 13 — LARP Nexus 概覽
 時長：~45s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # LARP Nexus / 技術核心
 
@@ -265,12 +307,18 @@ Slide 13 — LARP Nexus 概覽
 
 Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · Pusher
 
+</div>
+
 <!--
 Slide 14 — LARP Nexus 技術核心
 時長：~55s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # LARP Nexus / AI 開發實踐
 
@@ -286,12 +334,18 @@ Slide 14 — LARP Nexus 技術核心
 → 「人 + AI」協作可以做出完整產品。
 &nbsp;&nbsp;&nbsp;我已經驗證過了。
 
+</div>
+
 <!--
 Slide 15 — LARP Nexus AI 開發實踐
 時長：~50s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # 聯合報 / 軸線 1
 
@@ -308,12 +362,18 @@ Slide 15 — LARP Nexus AI 開發實踐
 
 → 我熟悉如何讓一群工程師高效共用程式碼。
 
+</div>
+
 <!--
 Slide 16 — 聯合報軸線 1：跨專案共用元件庫
 時長：~30s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # 聯合報 / 軸線 2
 
@@ -328,16 +388,24 @@ Slide 16 — 聯合報軸線 1：跨專案共用元件庫
 → 從 0 到 1 的環境建置、
 &nbsp;&nbsp;&nbsp;跨產品 / 設計 / 行銷的協作。
 
+</div>
+
 <!--
 Slide 17 — 聯合報軸線 2：新聞專題 + GTM
 時長：~30s
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto text-center">
 
 # 技能總覽
 
 ## Skill Matrix
+
+</div>
 
 <SkillMatrix
   :groups="[
@@ -357,6 +425,10 @@ Slide 18 — 技能矩陣
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # AI 工具熟練度
 
@@ -374,22 +446,29 @@ Slide 18 — 技能矩陣
 - **LARP Nexus** — 全程 AI 工具開發
 - **ClassSwift** — OpenSpec SDD 導入
 
+</div>
+
 <!--
 Slide 19 — AI 工具熟練度
 時長：~30s
 -->
 
 ---
-layout: cover
-background: ./assets/photos/divider-horizon.jpg
-class: text-white text-center
+layout: intro-image
+image: /photos/divider-horizon.jpg
 ---
+
+<div class="absolute inset-0 bg-black/30"></div>
+
+<div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
 # 為什麼是現在
 
 ## 為什麼是這裡
 
-What's Next
+<div class="mt-4 opacity-80">What's Next</div>
+
+</div>
 
 <!--
 Slide 20 — Part 5 章節標題
@@ -397,15 +476,20 @@ Slide 20 — Part 5 章節標題
 -->
 
 ---
+layout: center
+class: text-center
+---
 
-<div class="text-center mt-16">
+<div class="max-w-3xl mx-auto">
 
-2026 年初
+### 2026 年初
+
 ViewSonic Mac team 因公司戰略調整收掉。
 
 <hr class="my-8 mx-auto w-1/3" />
 
 對我來說,這是個正好的時機點
+
 重新思考下一站要做什麼。
 
 </div>
@@ -416,6 +500,10 @@ Slide 21 — 離職背景
 -->
 
 ---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
 
 # 為什麼是 Pacston
 
@@ -431,29 +519,38 @@ Slide 21 — 離職背景
 **我能帶來：**
 AI 整合經驗 · 元件庫設計 · OpenSpec 流程
 
+</div>
+
 <!--
 Slide 22B — 想做的事（Pacston 客製化版）
 時長：~50s
 -->
 
 ---
-layout: cover
-background: ./assets/photos/closing-thanks.jpg
-class: text-white text-center
+layout: intro-image
+image: /photos/closing-thanks.jpg
 ---
+
+<div class="absolute inset-0 bg-black/40"></div>
+
+<div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
 # Thank you
 
 ## 謝謝聆聽
 
+<div class="mt-8 text-lg">
 邱庭瑋  Cody Chiu
+</div>
 
-📧  TODO: email
-💼  TODO: linkedin URL
-🐙  TODO: github URL
+<div class="mt-2 text-sm opacity-80">
+📧  TODO: email　·　💼  TODO: linkedin　·　🐙  TODO: github
+</div>
 
-<div class="mt-8 text-sm">
+<div class="mt-8 text-sm opacity-70">
 TODO: QR code for portfolio
+</div>
+
 </div>
 
 <!--
@@ -463,6 +560,7 @@ Slide 23 — Thank You + 聯絡資訊
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # 附錄 / 詳細經歷時間軸
@@ -486,7 +584,10 @@ Slide A1 — 詳細工作經歷時間軸（Q&A 備用）
 
 ---
 hideInToc: true
+layout: center
 ---
+
+<div class="max-w-4xl mx-auto">
 
 # 附錄 / 技術深度範例
 
@@ -499,6 +600,7 @@ GM 在劇本進行中,需要根據條件
 <hr class="my-6" />
 
 **我的設計：**
+
 <div class="mt-4 text-sm text-gray-500">
 TODO: Mermaid 流程圖 / 狀態機示意
 </div>
@@ -509,6 +611,8 @@ TODO: Mermaid 流程圖 / 狀態機示意
 Server Actions · WebSocket 廣播
 狀態同步策略
 
+</div>
+
 <!--
 Slide A2 — 技術深度範例（Q&A 備用）
 -->
@@ -516,7 +620,7 @@ Slide A2 — 技術深度範例（Q&A 備用）
 ---
 hideInToc: true
 layout: image-right
-image: ./assets/photos/appendix-hobby.jpg
+image: /photos/appendix-hobby.jpg
 ---
 
 # 附錄 / 個人興趣

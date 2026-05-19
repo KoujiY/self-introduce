@@ -34,8 +34,11 @@ defineProps<{
 .identity-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 2rem 3rem;
   height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .header {

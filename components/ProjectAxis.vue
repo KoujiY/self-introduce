@@ -33,6 +33,12 @@ defineProps<{
 <style scoped>
 .project-axis {
   padding: 2rem 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .header {

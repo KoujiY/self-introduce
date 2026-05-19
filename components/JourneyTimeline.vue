@@ -41,6 +41,12 @@ defineProps<{
 <style scoped>
 .timeline {
   padding: 1rem 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .node {
