@@ -79,8 +79,8 @@ Slide 03 — Part 2 章節標題
   role="Game Planner"
   period="2014 – 2016"
   company="卡坦科技 + 遊戲怪獸"
-  lesson="從玩家視角設計規則"
-  bridge="後來在 ViewSonic 的 AI 創新小組,我用同樣的能力快速做出聊天式互動作答系統的 PoC。"
+  lesson="使用者思維 與 產品運營"
+  bridge="為 feature 與 bug 的優先級判斷打下良好基礎。"
   accent="var(--accent-game)"
 />
 
