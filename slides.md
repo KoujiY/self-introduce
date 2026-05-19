@@ -488,9 +488,8 @@ layout: center
 </div>
 
 <!--
-Slide 20A — 想做的事（通用版）
+Slide 20 — 想做的事
 時長：~50s
-注意：Pacston 客製版在 slides.pacston.md
 -->
 
 ---
