@@ -414,7 +414,10 @@ layout: center
     'GTM (Google Tag Manager) 數據追蹤'
   ]"
   footerLabel="規模 + 協作："
-  footerText="8+ 個專題從 0 到 1 上線；與記者 (PM)、設計師、行銷等跨部門合作。"
+  :footerBullets="[
+    '8+ 個專題從 0 到 1 上線',
+    '與記者 (PM)、設計師、行銷等跨部門合作'
+  ]"
 />
 
 <!--
@@ -626,17 +629,22 @@ image: /photos/appendix-hobby.jpg
 
 # 附錄 / 個人興趣
 
-## LARP (Live Action Role-Playing)
+除了寫程式之外，我還喜歡 ──
 
-這個興趣訓練我：
-
-- **系統思維**　　　(規則設計)
-- **使用者同理心**　(玩家體驗)
-- **即興反應能力**　(現場狀況)
-
-<hr class="my-6" />
-
-→ 這也是 LARP Nexus 的起點。
+<div class="space-y-6 mt-6">
+  <div>
+    <div class="font-bold">LARP / 謀殺之謎 / 桌遊</div>
+    <div class="text-base opacity-80">故事與規則交織的遊戲體驗</div>
+  </div>
+  <div>
+    <div class="font-bold">旅行</div>
+    <div class="text-base opacity-80">在不同節奏裡感受世界</div>
+  </div>
+  <div>
+    <div class="font-bold">清酒 / 料理</div>
+    <div class="text-base opacity-80">味蕾與手藝的探索</div>
+  </div>
+</div>
 
 <!--
 Slide A3 — 個人興趣（Q&A 備用）

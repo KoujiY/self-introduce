@@ -6,6 +6,7 @@ defineProps<{
   bullets: string[]
   footerLabel?: string
   footerText?: string
+  footerBullets?: string[]
   image?: string
   imageCaption?: string
 }>()
@@ -33,10 +34,13 @@ defineProps<{
           <li v-for="(b, idx) in bullets" :key="idx">{{ b }}</li>
         </ul>
 
-        <template v-if="footerLabel || footerText">
+        <template v-if="footerLabel || footerText || footerBullets">
           <hr class="section-divider" />
           <div v-if="footerLabel" class="footer-label">{{ footerLabel }}</div>
-          <div v-if="footerText" class="footer-text">{{ footerText }}</div>
+          <ul v-if="footerBullets" class="footer-bullets">
+            <li v-for="(b, idx) in footerBullets" :key="idx">{{ b }}</li>
+          </ul>
+          <div v-else-if="footerText" class="footer-text">{{ footerText }}</div>
         </template>
       </div>
     </div>
@@ -159,5 +163,25 @@ defineProps<{
   font-weight: 500;
   line-height: 1.6;
   margin-top: 0.5rem;
+}
+
+.footer-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.footer-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+.footer-bullets li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #1e293b;
 }
 </style>
