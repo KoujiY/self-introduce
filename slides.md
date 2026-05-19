@@ -258,20 +258,32 @@ layout: center
 
 ## 個人專案 · 即時多人 LARP 劇本管理平台
 
-<div class="mt-2 text-sm text-blue-600">
-GitHub: github.com/.../larp-nexus  (TODO: 替換為真實 URL)
+<div class="mt-2 text-sm flex justify-center gap-6">
+  <a href="https://github.com/KoujiY/larp-nexus" target="_blank" class="text-blue-600 hover:underline">
+    GitHub: github.com/KoujiY/larp-nexus
+  </a>
+  <a href="https://larp-nexus.vercel.app/" target="_blank" class="text-blue-600 hover:underline">
+    Demo: larp-nexus.vercel.app
+  </a>
 </div>
 
-<div class="mt-4 text-sm text-gray-500">
-TODO: GM 桌面端 + 玩家手機端雙截圖待補
+<div class="flex gap-8 my-4 justify-center items-center">
+  <a href="/images/larp-gm-desktop.png" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/larp-gm-desktop.png" class="h-36 mx-auto rounded shadow-md cursor-zoom-in" alt="LARP Nexus GM 桌面端" />
+    <div class="text-xs text-gray-500 mt-2">GM 桌面端 · 點圖看原圖</div>
+  </a>
+  <a href="/images/larp-player-mobile.png" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/larp-player-mobile.png" class="h-36 mx-auto rounded shadow-md cursor-zoom-in" alt="LARP Nexus 玩家手機端" />
+    <div class="text-xs text-gray-500 mt-2">玩家手機端 · 點圖看原圖</div>
+  </a>
 </div>
 
 ### 兩個子主題：
 
-- **技術核心**
+- **核心概念：**
   即時狀態同步 · 自動揭露引擎 · Runtime / Baseline 切換
-- **AI 開發實踐**
-  Claude Code (程式) + Stitch (UI) + OpenSpec 流程
+- **AI 開發實踐：**
+  Claude Code (程式) + Stitch (UI)
 
 </div>
 
@@ -286,17 +298,21 @@ layout: center
 
 <ProjectAxis
   company="LARP Nexus"
-  axisLabel="技術核心"
+  axisLabel="核心概念"
   heading="關鍵功能："
   :bullets="[
     '多角色即時狀態同步 (Pusher WebSocket)',
-    '自動揭露引擎',
-    'Runtime / Baseline 環境切換',
-    '原子化知識庫'
+    '自動揭露引擎 — 依條件向特定玩家自動釋出資訊',
+    'Runtime / Baseline 環境切換 — 劇本進行中 vs. 設計階段',
+    '原子化知識庫 — 規則拆成小單位、供 AI 查詢'
   ]"
   footerLabel="Stack:"
   footerText="Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · Pusher"
 />
+
+<div class="text-center mt-3 text-xs text-gray-500">
+  <Link to="23" class="hover:text-blue-600 hover:underline">→ 詳見附錄 A2：自動揭露引擎流程圖</Link>
+</div>
 
 <!--
 Slide 13 — LARP Nexus 技術核心
@@ -314,11 +330,11 @@ layout: center
   :bullets="[
     '程式面：Claude Code',
     'UI/UX：Stitch',
-    '流程：OpenSpec · 原子化知識庫',
-    '品質：Vitest + E2E'
+    '知識管理：原子化知識庫',
+    '品質：Vitest + Playwright'
   ]"
   footerLabel="心得："
-  footerText="「人 + AI」協作可以做出完整產品。我已經驗證過了。"
+  footerText="AI 浪潮勢不可擋，推陳出新速度只會更驚人。我能做的就是持續跟上、持續驗證。"
 />
 
 <!--
@@ -529,27 +545,30 @@ layout: center
 
 <div class="max-w-4xl mx-auto">
 
-# 附錄 / 技術深度範例
+# 附錄 / 技術範例
 
 ## LARP Nexus — 自動揭露引擎
 
 **問題：**
-GM 在劇本進行中,需要根據條件
-自動向特定角色揭露線索。
+GM 在劇本進行中，需要根據條件自動向特定角色揭露資訊。
 
 <hr class="my-6" />
 
 **我的設計：**
 
-<div class="mt-4 text-sm text-gray-500">
-TODO: Mermaid 流程圖 / 狀態機示意
-</div>
+```mermaid {scale: 0.7}
+flowchart LR
+  A[GM 預設揭露條件] --> B[系統持續監測<br/>遊戲狀態]
+  B --> C{條件成立?}
+  C -->|否| B
+  C -->|是| D[推送資訊<br/>給目標角色]
+  D --> E[玩家收到揭露通知]
+```
 
 <hr class="my-6" />
 
-**關鍵技術：**
+**使用技術：**
 Server Actions · WebSocket 廣播
-狀態同步策略
 
 </div>
 
