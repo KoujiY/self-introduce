@@ -59,7 +59,7 @@ Slide 03 — Part 2 章節標題
   period="2014 – 2016"
   company="卡坦科技 + 遊戲怪獸"
   lesson="從玩家視角設計規則"
-  bridge="後來在 ViewSonic 的 AI 創新小組，我用同樣的能力快速做出聊天式互動作答系統的 PoC。"
+  bridge="後來在 ViewSonic 的 AI 創新小組,我用同樣的能力快速做出聊天式互動作答系統的 PoC。"
   accent="var(--accent-game)"
 />
 
@@ -76,13 +76,13 @@ Slide 04 — 身份 1：遊戲企劃
   period="2016 – 2021"
   company="捷思達數位 · 4 年 7 個月"
   lesson="品質意識 與 系統性思考"
-  bridge="後來在 ClassSwift Mac 專案，我主動導入 OpenSpec / SDD,從制度面降低技術債的累積。"
+  bridge="後來在 ClassSwift Mac 專案,我主動導入 OpenSpec / SDD,從制度面降低技術債的累積。"
   accent="var(--accent-test)"
 />
 
 <!--
 Slide 05 — 身份 2：測試工程師
-時長：~75s（多 15 秒，這段是最重要的轉折期）
+時長：~75s（多 15 秒,這段是最重要的轉折期）
 -->
 
 ---
@@ -142,8 +142,6 @@ Slide 08 — Part 3 章節標題
 
 ## Frontend Developer · 2024.01 – 2026.02 · 2 年 2 個月
 
----
-
 <div class="mt-4 text-sm text-gray-500">
 TODO: Quiz Generator + ClassSwift 縮圖待補
 </div>
@@ -190,16 +188,15 @@ TODO：可選擇加入 LLM 整合架構圖
 TODO: ClassSwift Mac 端 UI 截圖待補
 </div>
 
----
-
 ViewSonic 主力教育產品 · 課堂即時互動
+
 我負責：Electron Mac 端開發與迭代
 
----
+<hr class="my-6" />
 
 **Stack:**
-Electron · TypeScript · Redux · Zod
-Axios · husky · Vitest · E2E
+
+Electron · TypeScript · Redux · Zod · Axios · husky · Vitest · E2E
 
 <!--
 Slide 11 — ViewSonic 軸線 2：ClassSwift
@@ -210,16 +207,16 @@ Slide 11 — ViewSonic 軸線 2：ClassSwift
 
 # ViewSonic 軸線 3 / OpenSpec
 
----
-
 **問題：**
 既有專案要怎麼跟 AI 開發工具整合？
+
+<hr class="my-6" />
 
 **我的做法：**
 主動導入 OpenSpec
 ── 為 AI 而生的 Spec-Driven Development
 
----
+<hr class="my-6" />
 
 **結果：** 團隊建立能應用於 AI 的開發方式,降低技術債、提升程式碼一致性。
 
@@ -236,13 +233,12 @@ Slide 12 — ViewSonic 軸線 3：OpenSpec
 github.com/.../larp-nexus  TODO: 替換為真實 URL
 </div>
 
----
-
 <div class="mt-4 text-sm text-gray-500">
 TODO: GM 桌面端 + 玩家手機端雙截圖待補
 </div>
 
 即時多人 LARP 劇本管理平台
+
 - GM 桌面端 + 玩家手機端
 - 全程 AI 工具開發
   Claude Code (程式) + Stitch (UI)
@@ -256,8 +252,6 @@ Slide 13 — LARP Nexus 概覽
 
 # LARP Nexus / 技術核心
 
----
-
 ### 關鍵功能：
 
 - **多角色即時狀態同步** (Pusher WebSocket)
@@ -265,11 +259,11 @@ Slide 13 — LARP Nexus 概覽
 - **Runtime / Baseline 環境切換**
 - **原子化知識庫**
 
----
+<hr class="my-6" />
 
 **Stack:**
-Next.js (App Router · Server Actions)
-TypeScript · MongoDB · Tailwind · Pusher
+
+Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · Pusher
 
 <!--
 Slide 14 — LARP Nexus 技術核心
@@ -280,8 +274,6 @@ Slide 14 — LARP Nexus 技術核心
 
 # LARP Nexus / AI 開發實踐
 
----
-
 ### 全程 AI 工具開發：
 
 - **程式面**：Claude Code
@@ -289,7 +281,7 @@ Slide 14 — LARP Nexus 技術核心
 - **流程**：OpenSpec · 原子化知識庫
 - **品質**：Vitest + E2E
 
----
+<hr class="my-6" />
 
 → 「人 + AI」協作可以做出完整產品。
 &nbsp;&nbsp;&nbsp;我已經驗證過了。
@@ -305,8 +297,6 @@ Slide 15 — LARP Nexus AI 開發實踐
 
 ## 前端工程師 · 2021.10 – 2023.10
 
----
-
 ### 跨專案共用元件庫
 
 - NPM 版本控管
@@ -314,7 +304,7 @@ Slide 15 — LARP Nexus AI 開發實踐
 - 大幅降低重複代碼
 - 提升跨專案開發效率
 
----
+<hr class="my-6" />
 
 → 我熟悉如何讓一群工程師高效共用程式碼。
 
@@ -327,15 +317,13 @@ Slide 16 — 聯合報軸線 1：跨專案共用元件庫
 
 # 聯合報 / 軸線 2
 
----
-
 ### 獨立負責多項前端專案：
 
 - **Vite + SPA** — 新聞專題頁面
 - **Nuxt + SSR** — 需要 SEO 的場合
 - **GTM (Google Tag Manager)** 數據追蹤
 
----
+<hr class="my-6" />
 
 → 從 0 到 1 的環境建置、
 &nbsp;&nbsp;&nbsp;跨產品 / 設計 / 行銷的協作。
@@ -372,15 +360,13 @@ Slide 18 — 技能矩陣
 
 # AI 工具熟練度
 
----
-
 ### 日常使用：
 
 - **Claude Code**　　　程式開發主力
 - **Stitch**　　　　　 UI/UX 設計協作
 - **OpenSpec**　　　　 AI-ready 開發流程
 
----
+<hr class="my-6" />
 
 ### 實戰經驗：
 
@@ -417,7 +403,7 @@ Slide 20 — Part 5 章節標題
 2026 年初
 ViewSonic Mac team 因公司戰略調整收掉。
 
----
+<hr class="my-8 mx-auto w-1/3" />
 
 對我來說,這是個正好的時機點
 重新思考下一站要做什麼。
@@ -433,8 +419,6 @@ Slide 21 — 離職背景
 
 # 為什麼是 Pacston
 
----
-
 - **AI + LegalTech**
   用 AI 賦能專業領域 ─
   正好是我做教育產品兩年來的延續。
@@ -442,7 +426,7 @@ Slide 21 — 離職背景
   LLM 推論 → 即時互動介面,
   是我在 ViewSonic 兩年的主軸。
 
----
+<hr class="my-6" />
 
 **我能帶來：**
 AI 整合經驗 · 元件庫設計 · OpenSpec 流程
@@ -461,8 +445,6 @@ class: text-white text-center
 # Thank you
 
 ## 謝謝聆聽
-
----
 
 邱庭瑋  Cody Chiu
 
@@ -510,18 +492,18 @@ hideInToc: true
 
 ## LARP Nexus — 自動揭露引擎
 
----
-
 **問題：**
 GM 在劇本進行中,需要根據條件
 自動向特定角色揭露線索。
+
+<hr class="my-6" />
 
 **我的設計：**
 <div class="mt-4 text-sm text-gray-500">
 TODO: Mermaid 流程圖 / 狀態機示意
 </div>
 
----
+<hr class="my-6" />
 
 **關鍵技術：**
 Server Actions · WebSocket 廣播
@@ -541,14 +523,13 @@ image: ./assets/photos/appendix-hobby.jpg
 
 ## LARP (Live Action Role-Playing)
 
----
-
 這個興趣訓練我：
+
 - **系統思維**　　　(規則設計)
 - **使用者同理心**　(玩家體驗)
 - **即興反應能力**　(現場狀況)
 
----
+<hr class="my-6" />
 
 → 這也是 LARP Nexus 的起點。
 
