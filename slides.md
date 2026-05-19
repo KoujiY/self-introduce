@@ -41,7 +41,7 @@ image: /photos/cover-hero.jpg
 Frontend Engineer
 
 <div class="mt-4 text-xl opacity-90">
-TODO: slogan 待自填
+在不斷變化的軟體環境中摸索前行
 </div>
 
 </div>
@@ -61,9 +61,9 @@ image: /photos/divider-roots.jpg
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
-# 我這 10 年都在做產品
+# 從企劃、測試、再到前端
 
-## 只是換了三個身份
+## 跨越十年的軌跡
 
 </div>
 
