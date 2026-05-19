@@ -13,3 +13,20 @@ hr.section-divider {
   margin: 1rem 0;
   width: 60%;
 }
+
+/*
+ * Workaround for Slidev v0.49.29 + fuse.js v7.3.0 incompatibility:
+ *
+ * Goto.vue assumes empty-query search returns no results, but Fuse v7 returns
+ * all items. This causes the full autocomplete list to render even when the
+ * dialog is "closed" (showGotoDialog === false → class .-top-20 → top: -5rem),
+ * and the 26-item list extends ~800px below the -80px offset, leaving most of
+ * it visible.
+ *
+ * When the dialog is in its closed state (class .-top-20), force it fully
+ * hidden via opacity + pointer-events so the visual matches the logical state.
+ */
+#slidev-goto-dialog.\-top-20 {
+  opacity: 0;
+  pointer-events: none;
+}
