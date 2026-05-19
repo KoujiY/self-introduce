@@ -352,11 +352,22 @@ layout: center
 
 ## 前端工程師 · 2021.10 – 2023.10
 
+<div class="flex gap-12 my-6 justify-center items-end">
+  <a href="https://vip.udn.com/newmedia/2022/exoticpets/" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/udn-feature-1.jpg" class="h-28 mx-auto rounded shadow-md cursor-pointer" alt="失控寵物島" />
+    <div class="text-xs text-gray-500 mt-2">失控寵物島 · 點圖看專題</div>
+  </a>
+  <a href="https://vip.udn.com/newmedia/2022/youth_crime/story" target="_blank" class="text-center hover:opacity-80 transition-opacity">
+    <img src="/images/udn-feature-2.jpg" class="h-28 mx-auto rounded shadow-md cursor-pointer" alt="6名中途少年的觸法自白" />
+    <div class="text-xs text-gray-500 mt-2">6名中途少年的觸法自白 · 點圖看專題</div>
+  </a>
+</div>
+
 ### 兩個工作軸線：
 
-- **跨專案共用元件庫**
+- **跨專案共用元件庫：**
   NPM 版本控管 · 跨多個專案共用 · 大幅降低重複代碼
-- **新聞專題 + GTM**
+- **新聞專題 + GTM：**
   Vite + SPA · Nuxt + SSR · GTM 數據追蹤
 
 </div>
@@ -373,7 +384,7 @@ layout: center
 <ProjectAxis
   company="聯合報"
   axisLabel="軸線 1 / 跨專案共用元件庫"
-  heading="我做的："
+  heading="做法 + 影響："
   :bullets="[
     'NPM 版本控管',
     '跨多個專案共用',
@@ -381,7 +392,7 @@ layout: center
     '提升跨專案開發效率'
   ]"
   footerLabel="收穫："
-  footerText="熟悉如何讓一群工程師高效共用程式碼。"
+  footerText="養成設計可重用、可維護工具的思考方式。"
 />
 
 <!--
@@ -396,14 +407,14 @@ layout: center
 <ProjectAxis
   company="聯合報"
   axisLabel="軸線 2 / 新聞專題 + GTM"
-  heading="獨立負責多項前端專案："
+  heading="按需選擇技術："
   :bullets="[
     'Vite + SPA — 新聞專題頁面',
     'Nuxt + SSR — 需要 SEO 的場合',
     'GTM (Google Tag Manager) 數據追蹤'
   ]"
-  footerLabel="收穫："
-  footerText="從 0 到 1 的環境建置、跨產品 / 設計 / 行銷的協作。"
+  footerLabel="規模 + 協作："
+  footerText="8+ 個專題從 0 到 1 上線；與記者 (PM)、設計師、行銷等跨部門合作。"
 />
 
 <!--
