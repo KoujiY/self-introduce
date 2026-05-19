@@ -254,21 +254,24 @@ layout: center
 
 <div class="max-w-4xl mx-auto">
 
-# LARP Nexus · 個人專案
+# LARP Nexus
+
+## 個人專案 · 即時多人 LARP 劇本管理平台
 
 <div class="mt-2 text-sm text-blue-600">
-github.com/.../larp-nexus  TODO: 替換為真實 URL
+GitHub: github.com/.../larp-nexus  (TODO: 替換為真實 URL)
 </div>
 
 <div class="mt-4 text-sm text-gray-500">
 TODO: GM 桌面端 + 玩家手機端雙截圖待補
 </div>
 
-即時多人 LARP 劇本管理平台
+### 兩個子主題：
 
-- GM 桌面端 + 玩家手機端
-- 全程 AI 工具開發
-  Claude Code (程式) + Stitch (UI)
+- **技術核心**
+  即時狀態同步 · 自動揭露引擎 · Runtime / Baseline 切換
+- **AI 開發實踐**
+  Claude Code (程式) + Stitch (UI) + OpenSpec 流程
 
 </div>
 
@@ -281,24 +284,19 @@ Slide 12 — LARP Nexus 概覽
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# LARP Nexus / 技術核心
-
-### 關鍵功能：
-
-- **多角色即時狀態同步** (Pusher WebSocket)
-- **自動揭露引擎**
-- **Runtime / Baseline 環境切換**
-- **原子化知識庫**
-
-<hr class="my-6" />
-
-**Stack:**
-
-Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · Pusher
-
-</div>
+<ProjectAxis
+  company="LARP Nexus"
+  axisLabel="技術核心"
+  heading="關鍵功能："
+  :bullets="[
+    '多角色即時狀態同步 (Pusher WebSocket)',
+    '自動揭露引擎',
+    'Runtime / Baseline 環境切換',
+    '原子化知識庫'
+  ]"
+  footerLabel="Stack:"
+  footerText="Next.js (App Router · Server Actions) · TypeScript · MongoDB · Tailwind · Pusher"
+/>
 
 <!--
 Slide 13 — LARP Nexus 技術核心
@@ -309,23 +307,19 @@ Slide 13 — LARP Nexus 技術核心
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# LARP Nexus / AI 開發實踐
-
-### 全程 AI 工具開發：
-
-- **程式面**：Claude Code
-- **UI/UX**：Stitch
-- **流程**：OpenSpec · 原子化知識庫
-- **品質**：Vitest + E2E
-
-<hr class="my-6" />
-
-→ 「人 + AI」協作可以做出完整產品。
-&nbsp;&nbsp;&nbsp;我已經驗證過了。
-
-</div>
+<ProjectAxis
+  company="LARP Nexus"
+  axisLabel="AI 開發實踐"
+  heading="全程 AI 工具開發："
+  :bullets="[
+    '程式面：Claude Code',
+    'UI/UX：Stitch',
+    '流程：OpenSpec · 原子化知識庫',
+    '品質：Vitest + E2E'
+  ]"
+  footerLabel="心得："
+  footerText="「人 + AI」協作可以做出完整產品。我已經驗證過了。"
+/>
 
 <!--
 Slide 14 — LARP Nexus AI 開發實踐
@@ -338,25 +332,21 @@ layout: center
 
 <div class="max-w-4xl mx-auto">
 
-# 聯合報 / 軸線 1
+# 聯合報
 
 ## 前端工程師 · 2021.10 – 2023.10
 
-### 跨專案共用元件庫
+### 兩個工作軸線：
 
-- NPM 版本控管
-- 跨多個專案共用
-- 大幅降低重複代碼
-- 提升跨專案開發效率
-
-<hr class="my-6" />
-
-→ 我熟悉如何讓一群工程師高效共用程式碼。
+- **跨專案共用元件庫**
+  NPM 版本控管 · 跨多個專案共用 · 大幅降低重複代碼
+- **新聞專題 + GTM**
+  Vite + SPA · Nuxt + SSR · GTM 數據追蹤
 
 </div>
 
 <!--
-Slide 15 — 聯合報軸線 1：跨專案共用元件庫
+Slide 15 — 聯合報概覽
 時長：~30s
 -->
 
@@ -364,54 +354,22 @@ Slide 15 — 聯合報軸線 1：跨專案共用元件庫
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# 聯合報 / 軸線 2
-
-### 獨立負責多項前端專案：
-
-- **Vite + SPA** — 新聞專題頁面
-- **Nuxt + SSR** — 需要 SEO 的場合
-- **GTM (Google Tag Manager)** 數據追蹤
-
-<hr class="my-6" />
-
-→ 從 0 到 1 的環境建置、
-&nbsp;&nbsp;&nbsp;跨產品 / 設計 / 行銷的協作。
-
-</div>
-
-<!--
-Slide 16 — 聯合報軸線 2：新聞專題 + GTM
-時長：~30s
--->
-
----
-layout: center
----
-
-<div class="max-w-4xl mx-auto text-center">
-
-# 技能總覽
-
-## Skill Matrix
-
-</div>
-
-<SkillMatrix
-  :groups="[
-    { level: '主力 / Primary', dots: 3, items: ['TypeScript · React · Vue', 'Vite · Next.js'] },
-    { level: '熟悉 / Proficient', dots: 2, items: ['Electron · Redux · Pinia', 'Tailwind · MongoDB · Pusher'] },
-    { level: '探索 / Exploring', dots: 1, items: ['Svelte'] }
+<ProjectAxis
+  company="聯合報"
+  axisLabel="軸線 1 / 跨專案共用元件庫"
+  heading="我做的："
+  :bullets="[
+    'NPM 版本控管',
+    '跨多個專案共用',
+    '大幅降低重複代碼',
+    '提升跨專案開發效率'
   ]"
-  :footnotes="[
-    { label: 'Testing', text: 'Vitest · E2E · Zod' },
-    { label: 'Tooling', text: 'husky · NPM publishing' }
-  ]"
+  footerLabel="收穫："
+  footerText="熟悉如何讓一群工程師高效共用程式碼。"
 />
 
 <!--
-Slide 17 — 技能矩陣
+Slide 16 — 聯合報軸線 1：跨專案共用元件庫
 時長：~30s
 -->
 
@@ -419,28 +377,21 @@ Slide 17 — 技能矩陣
 layout: center
 ---
 
-<div class="max-w-4xl mx-auto">
-
-# AI 工具熟練度
-
-### 日常使用：
-
-- **Claude Code**　　　程式開發主力
-- **Stitch**　　　　　 UI/UX 設計協作
-- **OpenSpec**　　　　 AI-ready 開發流程
-
-<hr class="my-6" />
-
-### 實戰經驗：
-
-- **ViewSonic AI 創新小組** — LLM 介面整合
-- **LARP Nexus** — 全程 AI 工具開發
-- **ClassSwift** — OpenSpec SDD 導入
-
-</div>
+<ProjectAxis
+  company="聯合報"
+  axisLabel="軸線 2 / 新聞專題 + GTM"
+  heading="獨立負責多項前端專案："
+  :bullets="[
+    'Vite + SPA — 新聞專題頁面',
+    'Nuxt + SSR — 需要 SEO 的場合',
+    'GTM (Google Tag Manager) 數據追蹤'
+  ]"
+  footerLabel="收穫："
+  footerText="從 0 到 1 的環境建置、跨產品 / 設計 / 行銷的協作。"
+/>
 
 <!--
-Slide 18 — AI 工具熟練度
+Slide 17 — 聯合報軸線 2：新聞專題 + GTM
 時長：~30s
 -->
 
@@ -462,7 +413,7 @@ image: /photos/divider-horizon.jpg
 </div>
 
 <!--
-Slide 19 — Part 5 章節標題
+Slide 18 — 下一步章節標題
 時長：~10s
 -->
 
@@ -486,7 +437,7 @@ ViewSonic Mac team 因公司戰略調整收掉。
 </div>
 
 <!--
-Slide 20 — 離職背景
+Slide 19 — 離職背景
 時長：~25s
 -->
 
@@ -513,7 +464,7 @@ AI 整合經驗 · 元件庫設計 · OpenSpec 流程
 </div>
 
 <!--
-Slide 21B — 想做的事（Pacston 客製化版）
+Slide 20B — 想做的事（Pacston 客製化版）
 時長：~50s
 -->
 
@@ -545,7 +496,7 @@ TODO: QR code for portfolio
 </div>
 
 <!--
-Slide 22 — Thank You + 聯絡資訊
+Slide 21 — Thank You + 聯絡資訊
 時長：~30s
 -->
 
