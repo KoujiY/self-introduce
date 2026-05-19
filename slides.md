@@ -435,7 +435,7 @@ image: /photos/divider-horizon.jpg
 
 ## 為什麼是這裡
 
-<div class="mt-4 opacity-80">What's Next</div>
+<div class="mt-4 opacity-80">── What's Next</div>
 
 </div>
 
@@ -453,13 +453,13 @@ class: text-center
 
 ### 2026 年初
 
-ViewSonic Mac team 因公司戰略調整收掉。
+ViewSonic ClassSwift Mac team 因公司戰略調整收掉。
 
 <hr class="my-8 mx-auto w-1/3" />
 
-對我來說,這是個正好的時機點
+對我來說，這雖然令人惋惜，但也是個契機 ──
 
-重新思考下一站要做什麼。
+一個能重新思考下一站的時刻。
 
 </div>
 
@@ -477,13 +477,12 @@ layout: center
 # 我想找的下一站
 
 - 跟得上 AI 浪潮、願意一起進化的團隊
-- 能讓我繼續深化「AI + 前端整合」的環境
-- 願意接觸更廣的軟體 stack,不限於前端
+- 扁平溝通、氛圍融洽，能夠並肩成長的環境
+- 願意讓我接觸更廣 stack、不限前端的職位
 
 <hr class="my-6" />
 
-→ 我能帶來的：
-&nbsp;&nbsp;&nbsp;做產品的視角 · 品質意識 · AI 開發實踐
+→ 我能帶來的：做產品的視角 · 品質意識 · AI 開發實踐
 
 </div>
 
