@@ -509,12 +509,19 @@ image: /photos/closing-thanks.jpg
 邱庭瑋  Wayne Chiu
 </div>
 
-<div class="mt-2 text-sm opacity-80">
-📧  TODO: email　·　💼  TODO: linkedin　·　🐙  TODO: github
-</div>
-
-<div class="mt-8 text-sm opacity-70">
-TODO: QR code for portfolio
+<div class="mt-6 flex gap-8 justify-center items-center text-base">
+  <a href="mailto:wegs8405@gmail.com" class="flex items-center gap-2 hover:opacity-70 transition-opacity">
+    <lucide-mail class="text-xl" />
+    <span>wegs8405@gmail.com</span>
+  </a>
+  <a href="https://www.linkedin.com/in/%E5%BA%AD%E7%91%8B-%E9%82%B1-0a797b297/" target="_blank" class="flex items-center gap-2 hover:opacity-70 transition-opacity">
+    <lucide-linkedin class="text-xl" />
+    <span>LinkedIn</span>
+  </a>
+  <a href="https://github.com/KoujiY" target="_blank" class="flex items-center gap-2 hover:opacity-70 transition-opacity">
+    <lucide-github class="text-xl" />
+    <span>KoujiY</span>
+  </a>
 </div>
 
 </div>
