@@ -132,11 +132,11 @@ image: /photos/divider-craft.jpg
 
 <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
 
-# 代表作
+# 作品集
 
 ## Featured Works
 
-<div class="mt-4 opacity-80">── 三個身份合流的證據</div>
+<div class="mt-4 opacity-80">── 工作與興趣的結晶</div>
 
 </div>
 
